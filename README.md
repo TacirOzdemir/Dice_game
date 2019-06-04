@@ -1,30 +1,12 @@
-# Bulls and Cows
+# Dice game
 
-C++ word-guessing game using Qt and ZeroMQ.
+JavaScrpit dice game
+![Overview](https://raw.githubusercontent.com/TacirOzdemir/Dice_game/master/Screenshot.png)
 
-![Overview](https://raw.githubusercontent.com/TacirOzdemir/Bulls-and-Cows/master/Image.png)
+GAME RULES:
+- The game has 2 players, playing in rounds
+- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
+- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
+- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
+- The first player to reach 100 points on GLOBAL score wins the game
 
-There are three main components; Broker, Client and Server.
-
-1. Client connects to the Broker
-2. Client requests IP of Server from Broker
-3. Server uses WIMIP to respond to request via Broker
-4. Broker sends IP to Client
-5. Client connects to Server
-6. Client sends word request to Server
-7. Server responds with hidden word
-8. Client plays game
-
-![Bulls_Cows_ZMQ.png](https://raw.githubusercontent.com/TacirOzdemir/Bulls-and-Cows/master/Bulls_Cows_ZMQ.png)
-
-Player tries to guess the hidden word.
-
-If a letter is correct but at the wrong spot, the Cow count is increased.
-
-If a letter is correct and at the right spot, the Bull count is increased.
-
-Player wins if the word is guessed correctly.
-
-Player loses if there are no more tries left.
-
-Amount of tries depends on the length of the hidden word.
