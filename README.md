@@ -1,6 +1,7 @@
 # Dice game
 
-JavaScrpit dice game
+JavaScript dice game
+
 ![Overview](https://raw.githubusercontent.com/TacirOzdemir/Dice_game/master/Screenshot.png)
 
 GAME RULES:
